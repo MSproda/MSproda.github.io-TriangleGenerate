@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220903103032">
+	<title>Triangle Generate</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="ms--animation__content">
+			<div class="ms--animation__logo">
+				<span class="ms--animation__word ms-M ">M</span>
+				<span class="ms--animation__word ms-S">S</span>
+			</div>
+		</div>
+
+		<header class="header" id="header">
+			<div class="header__content">
+				<div class="header__body">
+					<div class="logo">
+						<span class="logo__span-top">Triangle</span>
+						<span class="logo__span-bottom">Generate</span>
+					</div>
+
+					<nav class="header__body-menu">
+						<ul class="header__body-list">
+							<li><a href="#" class="header__body-link">CSS BoxShadow Generate</a></li>
+							<li><a href="#" class="header__body-link">CSS Linear Gradinent</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__body-spoiler body-spoiler body-spoiler--active">
+						<p class="body-spoiler__text">Другие проекты</p>
+						<img src="img/arrowDown.svg" class="body-spoiler__img" alt="arrow-down">
+						<nav class="body-spoiler__menu">
+							<ul>
+								<li><a href="#" class="body-spoiler__link">CSS BoxShadow Generate</a></li>
+								<li><a href="#" class="body-spoiler__link">CSS Linear Gradinent</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<section class="triangle__wrapper">
+				<div class="triangle__content container">
+
+					<div class="triangle__about">
+						<h1 class="triangle__about-title"><span>CSS</span> генератор треугольников</h1>
+						<p class="triangle__about-subTitle">
+							С помощью этого генератора вы сможете создать необходимый CSS-код для треугольника. Начните
+							с выбора направления треугольника, затем, в зависимости от направления, вы сможете создать
+							равнобедренный, равносторонний или масштабируемый треугольник. Выберите цвет, которым вы
+							хотели
+							бы сделать треугольник, и, наконец, вы можете изменить размер и поворот треугольника. Как
+							только вы будете довольны окончательным выбором, просто скопируйте код в буфер обмена и
+							вставьте в свой проект.
+						</p>
+
+						<div class="triangle__about--more">
+							<img class="triangle__about-img" src="img/arrowDown.svg" alt="arrowDown">
+							<span class="triangle__about-textMore">Читать дальше...</span>
+						</div>
+					</div>
+
+					<div class="generate__wrapper">
+						<div class="triangle__generate">
+							<div class="triangle__generate-content">
+
+								<div class="triangle__generate-direction generate-direction">
+									<h2 class="generate-direction__title _triangleTitle">Направление</h2>
+
+									<div class="generate-direction__content dirTriangleActive--top-left">
+										<div class="generate-direction__triangle triangle--top-left"></div>
+										<div class="generate-direction__triangle triangle--top-right"></div>
+										<div class="generate-direction__triangle triangle--bottom-left"></div>
+										<div class="generate-direction__triangle triangle--bottom-right"></div>
+										<div class="generate-direction__triangle triangle--top"></div>
+										<div class="generate-direction__triangle triangle--right"></div>
+										<div class="generate-direction__triangle triangle--bottom"></div>
+										<div class="generate-direction__triangle triangle--left"></div>
+									</div>
+								</div>
+
+								<div class="triangle__generate-type generate-type">
+									<h2 class="generate-type__title _triangleTitle">Тип:</h2>
+
+									<div class="generate-type__radioContent">
+										<input value="Isoscele" type="radio"
+											class="generate-type__radio radio--isoscele" name="triangle-radio"
+											id="Isoscele" checked>
+										<label class="generate-type__label" for="Isoscele">Равнобедренный</label>
+									</div>
+
+									<div class="generate-type__radioContent radio--equilateral unShow--radio">
+
+										<div class="disabled--radio">
+											<label class="generate-type__label">Равносторонний</label>
+										</div>
+
+										<div class="open--radio">
+											<input value="unShow" type="radio"
+												class="generate-type__radio radio--equilateral" name="triangle-radio"
+												id="Equilateral">
+											<label class="generate-type__label" for="Equilateral">Равносторонний</label>
+										</div>
+
+									</div>
+
+									<div class="generate-type__radioContent">
+										<input value="Scalene" type="radio" class="generate-type__radio radio--scalene"
+											name="triangle-radio" id="Scalene">
+										<label class="generate-type__label" for="Scalene">Масштабируемый</label>
+									</div>
+
+									<h2 class="generate-type__colorTitle _triangleTitle">Цвет</h2>
+
+									<div class="generate-type__triangleColor">
+										<input type="color" class="generate-type__input _inputColor" value="#F05454">
+										<span class="generate-type__colorOut">#F05454</span>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="triangle__generate-sizeContent generate-size">
+								<h2 class="generate-size__title _triangleTitle">Размеры</h2>
+
+								<div class="mob--flex">
+									<div class="generate-size__input inputWidthWrapper">
+										<p class="input__count">Width: <span class="input__width-out">250px</span></p>
+										<input class="input--width _inputRange" type="range" min="0" max="500">
+									</div>
+
+									<div class="generate-size__input inputHeightWrapper">
+										<p class="input__count">Height: <span class="input__height-out">250px</span></p>
+										<input class="input--height _inputRange" type="range" min="0" max="500">
+									</div>
+
+									<div class="generate-size__input inputTopWrapper">
+										<p class="input__count">Top: <span class="input__top-out">100px</span></p>
+										<input class="input--top _inputRange" type="range" min="0" max="500"
+											value="100">
+									</div>
+
+									<div class="generate-size__input inputRightWrapper">
+										<p class="input__count">Right: <span class="input__right-out">100px</span></p>
+										<input class="input--right _inputRange" type="range" min="0" max="500"
+											value="100">
+									</div>
+
+									<div class="generate-size__input inputBottomWrapper">
+										<p class="input__count">Bottom: <span class="input__bottom-out">100px</span></p>
+										<input class="input--bottom _inputRange" type="range" min="0" max="500"
+											value="100">
+									</div>
+
+									<div class="generate-size__input inputLeftWrapper">
+										<p class="input__count">Left: <span class="input__left-out">100px</span></p>
+										<input class="input--left _inputRange" type="range" min="0" max="500"
+											value="100">
+									</div>
+
+									<div class="generate-size__input">
+										<p class="input__count">Rotate: <span class="input__rotate-out">0deg</span></p>
+										<input class="input--rotate _inputRange" type="range" min="0" max="360"
+											value="0">
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="triangle__show">
+							<div class="triangle__show-content">
+								<div class="triangle triangleActive--top-left"></div>
+							</div>
+
+							<div class="triangle__show-inputContent">
+								<p class="triangle__show-bg">BG color:</p>
+								<span class="triangle__show-inputOut">#EBECF0</span>
+								<input type="color" class="triangle__show-input _inputColor" value="#EBECF0">
+							</div>
+						</div>
+					</div>
+
+					<div class="triangle__css-out">
+						<h2 class="triangle__css-title _triangleTitle">CSS <span>Code</span></h2>
+
+						<div class="triangle__css-wrapper">
+							.triangle {
+
+							<div class="triangle__css--padding">
+
+								<span class="triangle__css--color">width: </span>0px; <br>
+								<span class="triangle__css--color">height: </span>0px; <br>
+								<span class="triangle__css--color">border-style: </span>solid; <br>
+
+								<span class="triangle__css--color">border-width:</span>
+								<span class="borderTopOut">250px</span>
+								<span class="borderRightOut">250px</span>
+								<span class="borderBottomOut">0px</span>
+								<span class="borderLeftOut">0px</span>;
+								<br>
+
+								<span class="triangle__css--color">border-color:</span>
+								<span class="colorTopOut">#2c99838f</span>
+								<span class="colorRightOut">transparent</span>
+								<span class="colorBottomOut">transparent</span>
+								<span class="colorLeftOut">transparent</span>;
+								<br>
+
+								<span class="triangle__css--color">transform:</span> rotate( <span
+									class="rotate--out">0deg</span> );
+							</div>
+							}
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__content container">
+
+				<div class="footer__copy-content">
+					<div class="footer--MS">
+						<span class="footer__ms-M ">M</span>
+						<span class="footer__ms-S">S</span>
+					</div>
+					<p class="footer__copy">© 2022</p>
+				</div>
+
+				<div class="footer__copy-messages">
+					<P class="footer__copy-text">Мы в соц сетях:</P>
+					<a href="#">
+						<picture>
+							<source srcset="img/youtube.webp" type="image/webp"><img class="footer__copy-youtube"
+								src="img/youtube.png" alt="youtube">
+						</picture>
+					</a>
+					<a href="#"><img class="footer__copy-telegram" src="img/Telegram.svg" alt="telegram"></a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20220903103032"></script>
+</body>
+
+</html>
